@@ -10,7 +10,7 @@ from django.views.decorators.csrf import csrf_exempt
 # Create your views here.
 
 def getToken(request):
-    appID = 'b19f8123feec4b9d942478643c69f3a0'
+    appID = '' #App Id Generated from Agora.io
     appCertificate ='558775d16ff14e7c9705b143d47738c6'
     channelName = request.GET.get('channel')
     uid = random.randint(1,230)
